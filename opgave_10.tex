@@ -1,0 +1,45 @@
+%!TEX root = /Users/tamen/Documents/SDU/EFYS/Opgaver/EFYS--Gauss-Lov/main.tex
+\subsection{Del a} % (fold)
+\label{sub:del_a}
+Vi har Gauss' lov:
+\begin{equation}
+	\label{eqn:gauss_lov}
+	\epsilon _0 \oint \vec{E} \cdot d\vec{A} = q_{enc}
+\end{equation}
+Og formlen for overfladearealet og volumen af en cylinder:
+\begin{eqnarray}
+	A &=& 2\pi rh \\
+	V &=& \pi r^2 h
+\end{eqnarray}
+Da E-feltet er konstant og Gaussfladen lagt så efeltet står vinkelret på Gaussfladen kan ligning \ref{eqn:gauss_lov} simplificeres:
+\begin{equation}
+	\label{eqn:gauss_simp}
+	\epsilon _0 E \cdot 2\pi rh = q_{enc}
+\end{equation}
+$q_{enc}$ kan vi finde ved:
+\begin{eqnarray}
+	\label{eqn:q_lig}
+	\rho &=& \frac{q}{v} \nonumber \\
+	\rho &=& \frac{q}{\pi r^2 h} \nonumber \\
+	q &=& \rho \pi r^2 h
+\end{eqnarray}
+Så kan vi sætte ligning \ref{eqn:q_lig} ind i \ref{eqn:gauss_simp}:
+\begin{eqnarray}
+	\epsilon _0 E \cdot 2\pi rh &=& \rho \pi r^2 h \nonumber \\
+	\epsilon _0 E \cdot 2 &=& \rho r \nonumber \\
+	E &=& \frac{\rho r}{2\epsilon _0}
+\end{eqnarray}
+Hvilket jo var det vi skulle vise.
+% subsection del_a (end)
+\newpage
+
+\subsection{Del B} % (fold)
+\label{sub:del_b}
+Hvis Gaussfladen er større end den ladede cylinder vil det bare betyde at der er nogen $r$'er der ikke går ud med hinanden da vi akl bruge cylindrens radius $R$  til at udregne $q_{enc}$ i stedet for Gaussfladens radius $r$.
+\begin{eqnarray}
+	q &=& \rho \pi R^2 h \nonumber \\
+	\epsilon _0 E \cdot 2\pi rh &=& \rho \pi R^2 h \nonumber \\
+	\epsilon _0 E \cdot 2r &=& \rho R^2 \nonumber \\
+	E &=& \frac{\rho R^2}{2r\epsilon _0}
+\end{eqnarray}
+% subsection del_b (end)
